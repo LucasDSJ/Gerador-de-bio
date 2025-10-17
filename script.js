@@ -103,7 +103,7 @@ const modelosFinalizacao = [
     () => `Sigo em frente, aberto ao que vier`,
     () => `Agradeço pelo seu tempo e interesse`,
     () => `Agradeço por ter lido até aqui`,
-    () => `Agradeço pela sua atenção Até uma próxima oportunidade`,
+    () => `Agradeço pela sua atenção, até uma próxima oportunidade`,
     () => `Conte comigo para o que precisar`,
     () => `Por enquanto, é isso`,
     () => `Desejo boas experiências futuras, para todos`,
@@ -160,11 +160,11 @@ const copiadoMsg = document.getElementById("copiadoMsg");
 // Função para gerar bio
 function gerarBio() {
     const nome = document.getElementById("nome").value.trim();
-    const profissao = document.getElementById("area_de_atuacao").value.trim();
+    const profissao = document.getElementById("area_de_atuacao").value.trim().toLowerCase();
     const tecnologias = document.getElementById("tecnologias_favoritas").value.trim();
-    const objetivo = document.getElementById("objetivo_profissional").value.trim();
-    const interesses = document.getElementById("interesses").value.trim();
-    const contato = document.getElementById("contato").value.trim();
+    const objetivo = document.getElementById("objetivo_profissional").value.trim().toLowerCase();
+    const interesses = document.getElementById("interesses").value.trim().toLowerCase();
+    const contato = document.getElementById("contato").value.trim().toLowerCase();
 
     if (!nome || !profissao || !tecnologias || !objetivo || !interesses) return;
 
