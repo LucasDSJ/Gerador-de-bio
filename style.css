@@ -3,3 +3,35 @@ footer {
     margin: 0;
     padding: 0;
 }
+
+.cor-de-fundo-roxo {
+    background-color: rgb(71, 53, 142);
+}
+
+.imagem-perfil {
+  width: 180px;          /* Tamanho fixo da imagem */
+  height: 180px;         /* Mesmo valor para manter o círculo */
+  object-fit: cover;     /* Evita distorção */
+  flex-shrink: 0;        /* Impede que a imagem seja comprimida */
+  border: 3px solid #fff; /* Opcional: borda branca */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .imagem-perfil {
+    margin-bottom: 1rem;
+  }
+}
+
+.fa-brands {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+

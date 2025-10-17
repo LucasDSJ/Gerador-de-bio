@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+    <div id="app">
+
+        <!-- HEADER -->
+        <navbar-component></navbar-component>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-7">
+                    <div class="cor-de-fundo-roxo p-4 rounded">
+                        <h1 class="text-center">Sobre mim</h2>
+                        <div class="d-flex align-items-center mt-5 flex-md-row flex-column text-md-start text-center">
+                            <!-- Imagem à esquerda -->
+                            <img src="img/perfil-github.jfif"
+                                alt="Foto de perfil"
+                                class="img-fluid rounded-circle imagem-perfil me-md-4 mb-3 mb-md-0">
+
+                            <!-- Texto à direita -->
+                            <p class="fs-5 mb-0">
+                                Olá! Sou Lucas, desenvolvedor frontend apaixonado por criar interfaces modernas e intuitivas.
+                                Gosto de transformar ideias em experiências digitais que unam design e funcionalidade.
+                                Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de qualidade.
+                            </p>
+                        </div>
+                        <h2 class="text-center mt-4">Tecnologias</h2>
+                        <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                            <i class="fa-brands fa-html5 fa-4x border rounded-3 p-2" title="HTML5"></i>
+                            <i class="fa-brands fa-css3-alt fa-4x border rounded-3 p-2" title="CSS3"></i>
+                            <i class="fa-brands fa-js fa-4x border rounded-3 p-2" title="JavaScript"></i>
+                            <i class="fa-brands fa-bootstrap fa-4x border rounded-3 p-2" title="Bootstrap"></i>
+                            <i class="fa-brands fa-vuejs fa-4x border rounded-3 p-2" title="Vue.js"></i>
+                            <i class="fa-brands fa-php fa-4x border rounded-3 p-2" title="PHP"></i>
+                            <i class="fa-brands fa-react fa-4x border rounded-3 p-2" title="React"></i>
+                            <i class="fa-brands fa-java fa-4x border rounded-3 p-2" title="Java"></i>
+                            <i class="fa-brands fa-python fa-4x border rounded-3 p-2" title="Python"></i>
+                            <i class="fa-brands fa-git-alt fa-4x border rounded-3 p-2" title="Git"></i>
+                            <i class="fa-brands fa-github fa-4x border rounded-3 p-2" title="GitHub"></i>
+                            <!-- A TERMINAR... -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <footer-component></footer-component>
+    
+    </div><!-- div app -->
+
+    <!-- Componentes -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/app.js"></script>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="notificacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toastify JS - apontando para o arquivo minificado -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+
+</body>
+</html>
