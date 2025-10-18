@@ -17,11 +17,18 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.fonte-contato {
+	font-size: 1.25rem;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
-  .imagem-perfil {
-    margin-bottom: 1rem;
-  }
+  	.imagem-perfil {
+    	margin-bottom: 1rem;
+  	}
+  	.fonte-contato {
+		font-size: 1.0rem;
+	}
 }
 
 .icones {
@@ -34,4 +41,7 @@ footer {
   cursor: pointer;
 }
 
-
+.link:hover {
+	transition: transform 0.5s ease;
+	transform: scale(1.1);
+}
