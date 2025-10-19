@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Bio para Programadores</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Biblioteca de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+    <div id="app">
+
+        <!-- HEADER -->
+        <navbar-component></navbar-component>
+
+        <!-- Conteúdo principal -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-7">
+                    <form name="formulario" class="cor-de-fundo-roxo p-4 rounded border-top">
+
+                        <h2 class="text-center text-white mb-3 border-start border-bottom border-end rounded-pill pb-3">Versão de desenvolvedor</h2>
+                        <h4 class="text-center text-white">Insira as suas informações</h4>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: José Silva" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Selecione sua área de desenvolvedor:</label>
+                            <select class="form-select">
+                                <option disabled selected>Selecione</option>
+                                <option value="administrador-de-banco-de-dados">Administrador de banco de dados</option>
+                                <option value="administrador-de-sistemas">Administrador de sistemas</option>
+                                <option value="analista-de-dados">Analista de dados</option>
+                                <option value="analista-de-seguranca-da-informacao">Analista de segurança da informação</option>
+                                <option value="analista-de-sistemas">Analista de sistemas</option>
+                                <option value="analista-de-suporte">Analista de suporte</option>
+                                <option value="analista-de-testes">Analista de testes</option>
+                                <option value="arquiteto-de-cloud">Arquiteto de Cloud</option>
+                                <option value="arquiteto-de-dados">Arquiteto de Dados</option>
+                                <option value="arquiteto-de-redes">Arquiteto de redes</option>
+                                <option value="arquiteto-de-software">Arquiteto de software</option>
+                                <option value="cientista-de-dados">Cientista de dados</option>
+                                <option value="consultor-de-ti">Consultor de TI</option>
+                                <option value="desenvolvedor-backend">Desenvolvedor Backend</option>
+                                <option value="desenvolvedor-de-games">Desenvolvedor de Games</option>
+                                <option value="desenvolvedor-frontend">Desenvolvedor Frontend</option>
+                                <option value="desenvolvedor-fullstack">Desenvolvedor Fullstack</option>
+                                <option value="desenvolvedor-mobile">Desenvolvedor Mobile</option>
+                                <option value="desenvolvedor-web">Desenvolvedor Web</option>
+                                <option value="engenheiro-de-automacao">Engenheiro de automação</option>
+                                <option value="engenheiro-de-dados">Engenheiro de dados</option>
+                                <option value="engenheiro-de-ia">Engenheiro de IA</option>
+                                <option value="engenheiro-de-redes">Engenheiro de redes</option>
+                                <option value="engenheiro-de-seguranca">Engenheiro de segurança</option>
+                                <option value="engenheiro-de-software">Engenheiro de software</option>
+                                <option value="engenheiro-de-suporte">Engenheiro de Suporte</option>
+                                <option value="especialista-em-cloud">Especialista em Cloud</option>
+                                <option value="especialista-em-ciberseguranca">Especialista em Cibersegurança</option>
+                                <option value="especialista-em-infraestrutura">Especialista em infraestrutura</option>
+                                <option value="especialista-em-redes">Especialista em redes</option>
+                                <option value="especialista-em-seguranca-da-informacao">Especialista em segurança da informação</option>
+                                <option value="programador-de-sistemas-embarcados">Programador de sistemas embarcados</option>
+                                <option value="scrum-master">Scrum Master</option>
+                                <option value="tech-lead">Tech Lead</option>
+                                <option value="ui-designer">UI Designer</option>
+                                <option value="ux-designer">UX Designer</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tecnologias" class="form-label">Tecnologias que você domina:</label>
+                            <input type="text" id="tecnologias" name="tecnologias" class="form-control" placeholder="Ex: HTML5, CSS3, JavaScript, Bootstrap, Vue.js" required>
+                        </div>
+
+                        <!--=================================================================================================================-->
+                        <!-- ÁREA DE EXPERIÊNCIA -->
+                        <!-- 
+                        <h5>Tem experiência na área?</h2>
+                        <div class="">
+                            <input type="radio" id="com-experiencia" name="formacao" value="com-experiencia" class="form-check-input">
+                            <label class="com-experiencia form-check-label ms-2" for="com-experiencia">Sim</label>
+                            <input type="radio" id="sem-experiencia" name="formacao" value="sem-experiencia" class="form-check-input ms-3">
+                            <label class="sem-experiencia form-check-label ms-2" for="sem-experiencia">Não</label>
+                        </div> 
+                        -->
+                    </form>
+
+<!--========================================================================================================================================================================-->
+                    <form class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
+                        <!------------------------------------------------------------------------------------------------------------------->
+                        <h5>Tem formação na área?</h2>
+                        <div class="">
+                            <input type="radio" id="com-formacao" name="formacao" value="com-formação" class="form-check-input">
+                            <label class="com-formacao form-check-label ms-2" for="com-formacao">Sim</label>
+                            <input type="radio" id="sem-formacao" name="formacao" value="sem-formação" class="form-check-input ms-3">
+                            <label class="sem-formacao form-check-label ms-2" for="sem-formacao">Não</label>
+                        </div>
+                        <!------------------------------------------------------------------------------------------------------------------->
+
+                        <div class="d-flex flex-wrap mb-1 mt-2">
+                            <input type="checkbox" id="checkbox-tecnico" name="checkbox-tecnico" value="checkbox-tecnico" class="form-check-input">
+                            <label id="label-tecnico" class="form-check-label ms-2" for="checkbox-tecnico">Técnico</label>
+                        </div>
+                        <div class="d-flex flex-wrap mb-1">
+                            <input type="checkbox" id="checkbox-graduacao" name="checkbox-graduacao" value="checkbox-graduacao" class="form-check-input">
+                            <label id="label-graduacao" class="form-check-label ms-2" for="checkbox-graduacao">Graduação</label>
+                        </div>
+                        <div class="d-flex flex-wrap mb-1">
+                            <input type="checkbox" id="checkbox-mestrado" name="checkbox-mestrado" value="checkbox-mestrado" class="form-check-input">
+                            <label id="label-mestrado" class="form-check-label ms-2" for="checkbox-mestrado">Mestrado</label>
+                        </div>
+                        <div class="d-flex flex-wrap mb-3">
+                            <input type="checkbox" id="checkbox-doutorado" name="checkbox-doutorado" value="checkbox-doutorado" class="form-check-input">
+                            <label id="label-doutorado" class="form-check-label ms-2" for="checkbox-doutorado">Doutorado</label>
+                        </div>
+
+                        <!------------------------------------------------------------------------------------------------------------------->
+        
+                        <div id="input-tecnico" class="mb-2">
+                            <label for="curso" class="form-label">Insira o curso técnico:</label>
+                            <input type="text" id="curso" name="curso" class="form-control" placeholder="Ex: Análise e Desenvolvimento de Sistemas" required>
+                        </div>
+                        <div id="input-graduacao" class="mb-2">
+                            <label for="graduacao" class="form-label">Insira o curso de graduação:</label>
+                            <input type="text" id="graduacao" name="graduacao" class="form-control" placeholder="Ex: Ciências da Computação" required>
+                        </div>
+                        <div id="input-mestrado" class="mb-2">
+                            <label for="mestrado" class="form-label">Insira o curso de mestrado:</label>
+                            <input type="text" id="mestrado" name="mestrado" class="form-control" placeholder="Ex: Engenharia de Software" required>
+                        </div>
+                        <div id="input-doutorado" class="mb-2">
+                            <label for="doutorado" class="form-label">Insira o curso de doutorado:</label>
+                            <input type="text" id="doutorado" name="doutorado" class="form-control" placeholder="Ex: Ciência de dados" required>
+                        </div>
+
+<!--========================================================================================================================================================================-->
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Gerar Bio</button>
+                            <button type="reset" class="btn btn-danger">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        <!-- Essas linhas pertencem ao container -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-12 mt-4">
+                <h4>Bio gerada:</h4>
+                <div id="bioGerada" class="border p-3 rounded text-white"></div>
+            </div>
+
+            <div class="mt-3 d-flex gap-2 justify-content-center">
+                <button class="btn btn-secondary" id="novaVersaoBtn">Gerar nova versão</button>
+                <button class="btn btn-success" id="copiarBtn">Copiar Bio</button>
+            </div>
+            <div id="copiadoMsg" class="mt-2 text-success" style="display: none;">Bio copiada para a área de transferência!</div>
+        </div>
+    </div> 
+
+    <footer-component></footer-component>
+    
+    </div><!-- div app -->
+
+    <!-- Componentes -->
+    <script src="components/navbar.js"></script>
+
+    <script src="scripts/formacao.js"></script>
+    
+    <script src="components/footer.js"></script>
+    <script src="components/app.js"></script>
+    
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/notificacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toastify JS - apontando para o arquivo minificado -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+
+</body>
+</html>

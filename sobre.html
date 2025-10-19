@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o projeto</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Ícones Devicon --> 
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Toastify CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
+    <div id="app">
+
+        <!-- HEADER -->
+        <navbar-component></navbar-component>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-7">
+                    <div class="cor-de-fundo-roxo p-4 rounded">
+                        <h1 class="text-center">Sobre mim</h2>
+                        <div class="d-flex align-items-center mt-4 flex-md-row flex-column text-md-start text-center border-bottom">
+                            <!-- Imagem à esquerda -->
+                            <img src="img/perfil-github.jfif"
+                                alt="Foto de perfil"
+                                class="img-fluid rounded-circle imagem-perfil me-md-4 mb-3 mb-md-0">
+
+                            <!-- Texto à direita -->
+                            <p class="fs-5 mb-3">
+                                Olá! Sou Lucas, desenvolvedor full stack apaixonado por criar aplicações completas e eficientes.
+                                Transformo ideias em soluções digitais que unem design, performance e funcionalidade, sempre buscando evoluir com novas tecnologias e boas práticas de desenvolvimento.
+                            </p>
+                        </div>
+                        <h2 class="text-center mt-4">Tecnologias que utilizo:</h2>
+                        <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 mb-2">
+                            <i class="icones fa-brands fa-html5 fa-3x border rounded-3 p-2" title="HTML5"></i>
+                            <i class="icones fa-brands fa-css3-alt fa-3x border rounded-3 p-2" title="CSS3"></i>
+                            <i class="icones fa-brands fa-js fa-3x border rounded-3 p-2" title="JavaScript"></i>
+                            <i class="icones fa-brands fa-bootstrap fa-3x border rounded-3 p-2" title="Bootstrap"></i>
+                            <i class="icones devicon-tailwindcss-original fa-3x border rounded-3 p-2" title="Tailwind"></i>
+                            <i class="icones devicon-materializecss-plain fa-3x border rounded-3 p-2" title="Materialize"></i>
+                            <i class="icones fa-brands fa-vuejs fa-3x border rounded-3 p-2" title="Vue.js"></i>
+                            <i class="icones fa-brands fa-php fa-3x border rounded-3 p-2" title="PHP"></i>
+                            <i class="icones fa-brands fa-react fa-3x border rounded-3 p-2" title="React"></i>
+                            <i class="icones fa-brands fa-java fa-3x border rounded-3 p-2" title="Java"></i>
+                            <i class="icones fa-brands fa-python fa-3x border rounded-3 p-2" title="Python"></i>
+                            <i class="icones fa-brands fa-git-alt fa-3x border rounded-3 p-2" title="Git"></i>
+                            <i class="icones fa-brands fa-github fa-3x border rounded-3 p-2" title="GitHub"></i>
+                            <i class="icones devicon-kotlin-plain fa-3x border rounded-3 p-2" title="Kotlin"></i>
+                            <i class="icones devicon-mongodb-plain fa-3x border rounded-3 p-2" title="MongoDB"></i>
+                            <i class="icones devicon-mysql-original fa-3x border rounded-3 p-2" title="MySQL"></i>
+                            <i class="icones devicon-nodejs-plain-wordmark fa-3x border rounded-3 p-2" title="Node.js"></i>
+                            <i class="icones devicon-expo-original-wordmark fa-3x border rounded-3 p-2" title="Expo"></i>
+                            <i class="icones devicon-canva-original fa-3x border rounded-3 p-2" title="Canva"></i>
+                            <i class="icones devicon-figma-plain fa-3x border rounded-3 p-2" title="Figma"></i>
+                        </div>
+
+                        <h2 class="mt-4 pt-3 border-top">Contato:</h2>
+                        <div class="d-flex flex-wrap justify-content-start gap-4 mt-2">
+                            <i class="fa-solid fa-phone fa-2x border rounded-circle p-2 mt-3 ms-3"></i><p class="mt-4 fonte-contato fw-bold">(11) 98591-3186</p>
+                        </div>
+                        <div class="d-flex justify-content-start gap-4 mt-2">
+                            <i class="fa-solid fa-envelope fa-2x border rounded-circle p-2 mt-3 ms-3"></i><p class="mt-4 fonte-contato fw-bold">lucasdsjr2005@gmail.com</p>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-start gap-4 mt-2">
+                            <i class="devicon-linkedin-plain fa-2x border rounded-circle p-2 mt-3 ms-3"></i><a class="link link-light link-underline link-underline-opacity-0 mt-4 fonte-contato fw-bold" href="https://www.linkedin.com/in/lucas-da-silva-junior-58b6a728b/" target="_blank">Lucas da Silva Junior</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <footer-component></footer-component>
+    
+    </div><!-- div app -->
+
+    <!-- Componentes -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/app.js"></script>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="notificacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toastify JS - apontando para o arquivo minificado -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+
+</body>
+</html>
