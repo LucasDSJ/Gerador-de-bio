@@ -88,18 +88,6 @@
                             <label for="tecnologias" class="form-label">Tecnologias que você domina:</label>
                             <input type="text" id="tecnologias" name="tecnologias" class="form-control" placeholder="Ex: HTML5, CSS3, JavaScript, Bootstrap, Vue.js" required>
                         </div>
-
-                        <!--=================================================================================================================-->
-                        <!-- ÁREA DE EXPERIÊNCIA -->
-                        <!-- 
-                        <h5>Tem experiência na área?</h2>
-                        <div class="">
-                            <input type="radio" id="com-experiencia" name="formacao" value="com-experiencia" class="form-check-input">
-                            <label class="com-experiencia form-check-label ms-2" for="com-experiencia">Sim</label>
-                            <input type="radio" id="sem-experiencia" name="formacao" value="sem-experiencia" class="form-check-input ms-3">
-                            <label class="sem-experiencia form-check-label ms-2" for="sem-experiencia">Não</label>
-                        </div> 
-                        -->
                     </form>
 
 <!--========================================================================================================================================================================-->
@@ -149,14 +137,23 @@
                             <label for="doutorado" class="form-label">Insira o curso de doutorado:</label>
                             <input type="text" id="doutorado" name="doutorado" class="form-control" placeholder="Ex: Ciência de dados" required>
                         </div>
-
-<!--========================================================================================================================================================================-->
-
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary">Gerar Bio</button>
-                            <button type="reset" class="btn btn-danger">Limpar</button>
-                        </div>
                     </form>
+<!--========================================================================================================================================================================-->
+                    <form class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
+                        <h5 class="mb-4">Experiências profissionais</h5>
+
+                        <div id="experiencias-container" class="mb-3"></div>
+
+                        <button type="button" id="adicionar-experiencia" class="btn btn-primary w-100">
+                            <i class="fa-solid fa-plus"></i> Adicionar experiência
+                        </button>
+                    </form>
+
+
+                    <div class="cor-de-fundo-roxo d-grid d-flex flex-wrap gap-2 mt-3 p-3 justify-content-center">
+                        <button type="submit" class="btn btn-primary col-5">Gerar Bio</button>
+                        <button type="reset" class="btn btn-danger col-5">Limpar</button>
+                    </div>
                 </div>
             </div>
 
@@ -182,6 +179,7 @@
     <!-- Componentes -->
     <script src="components/navbar.js"></script>
 
+    <script src="scripts/experiencia.js"></script>
     <script src="scripts/formacao.js"></script>
     
     <script src="components/footer.js"></script>
