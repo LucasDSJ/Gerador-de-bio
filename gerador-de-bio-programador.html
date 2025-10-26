@@ -31,129 +31,131 @@
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-7">
-                    <form name="formulario" class="cor-de-fundo-roxo p-4 rounded border-top">
+                    <form name="formulario" id="formulario-dev">
+                        <div class="cor-de-fundo-roxo p-4 rounded border-top">
+                            <h2 class="text-center text-white mb-3 border-start border-bottom border-end rounded-pill pb-3">Versão de desenvolvedor</h2>
+                            <h4 class="text-center text-white">Insira as suas informações</h4>
 
-                        <h2 class="text-center text-white mb-3 border-start border-bottom border-end rounded-pill pb-3">Versão de desenvolvedor</h2>
-                        <h4 class="text-center text-white">Insira as suas informações</h4>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: José Silva" required>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome:</label>
-                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: José Silva" required>
+                            <div class="mb-3">
+                                <label class="form-label">Selecione sua área de desenvolvedor:</label>
+                                <select class="form-select" id="area">
+                                    <option disabled selected>Selecione</option>
+                                    <option value="administrador de banco de dados">Administrador de banco de dados</option>
+                                    <option value="administrador de sistemas">Administrador de sistemas</option>
+                                    <option value="analista de dados">Analista de dados</option>
+                                    <option value="analista de seguranca da informacao">Analista de segurança da informação</option>
+                                    <option value="analista de sistemas">Analista de sistemas</option>
+                                    <option value="analista de suporte">Analista de suporte</option>
+                                    <option value="analista de testes">Analista de testes</option>
+                                    <option value="arquiteto de cloud">Arquiteto de Cloud</option>
+                                    <option value="arquiteto de dados">Arquiteto de Dados</option>
+                                    <option value="arquiteto de redes">Arquiteto de redes</option>
+                                    <option value="arquiteto de software">Arquiteto de software</option>
+                                    <option value="cientista de dados">Cientista de dados</option>
+                                    <option value="consultor de ti">Consultor de TI</option>
+                                    <option value="desenvolvedor backend">Desenvolvedor Backend</option>
+                                    <option value="desenvolvedor de games">Desenvolvedor de Games</option>
+                                    <option value="desenvolvedor frontend">Desenvolvedor Frontend</option>
+                                    <option value="desenvolvedor fullstack">Desenvolvedor Fullstack</option>
+                                    <option value="desenvolvedor mobile">Desenvolvedor Mobile</option>
+                                    <option value="desenvolvedor web">Desenvolvedor Web</option>
+                                    <option value="engenheiro de automacao">Engenheiro de automação</option>
+                                    <option value="engenheiro de dados">Engenheiro de dados</option>
+                                    <option value="engenheiro de ia">Engenheiro de IA</option>
+                                    <option value="engenheiro de redes">Engenheiro de redes</option>
+                                    <option value="engenheiro de seguranca">Engenheiro de segurança</option>
+                                    <option value="engenheiro de software">Engenheiro de software</option>
+                                    <option value="engenheiro de suporte">Engenheiro de Suporte</option>
+                                    <option value="especialista em cloud">Especialista em Cloud</option>
+                                    <option value="especialista em ciberseguranca">Especialista em Cibersegurança</option>
+                                    <option value="especialista em infraestrutura">Especialista em infraestrutura</option>
+                                    <option value="especialista em redes">Especialista em redes</option>
+                                    <option value="especialista em seguranca da informacao">Especialista em segurança da informação</option>
+                                    <option value="programador de sistemas embarcados">Programador de sistemas embarcados</option>
+                                    <option value="scrum master">Scrum Master</option>
+                                    <option value="tech lead">Tech Lead</option>
+                                    <option value="ui designer">UI Designer</option>
+                                    <option value="ux designer">UX Designer</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tecnologias" class="form-label">Tecnologias que você domina:</label>
+                                <input type="text" id="tecnologias" name="tecnologias" class="form-control" placeholder="Ex: HTML5, CSS3, JavaScript, Bootstrap, Vue.js" required>
+                            </div>
                         </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Selecione sua área de desenvolvedor:</label>
-                            <select class="form-select">
-                                <option disabled selected>Selecione</option>
-                                <option value="administrador-de-banco-de-dados">Administrador de banco de dados</option>
-                                <option value="administrador-de-sistemas">Administrador de sistemas</option>
-                                <option value="analista-de-dados">Analista de dados</option>
-                                <option value="analista-de-seguranca-da-informacao">Analista de segurança da informação</option>
-                                <option value="analista-de-sistemas">Analista de sistemas</option>
-                                <option value="analista-de-suporte">Analista de suporte</option>
-                                <option value="analista-de-testes">Analista de testes</option>
-                                <option value="arquiteto-de-cloud">Arquiteto de Cloud</option>
-                                <option value="arquiteto-de-dados">Arquiteto de Dados</option>
-                                <option value="arquiteto-de-redes">Arquiteto de redes</option>
-                                <option value="arquiteto-de-software">Arquiteto de software</option>
-                                <option value="cientista-de-dados">Cientista de dados</option>
-                                <option value="consultor-de-ti">Consultor de TI</option>
-                                <option value="desenvolvedor-backend">Desenvolvedor Backend</option>
-                                <option value="desenvolvedor-de-games">Desenvolvedor de Games</option>
-                                <option value="desenvolvedor-frontend">Desenvolvedor Frontend</option>
-                                <option value="desenvolvedor-fullstack">Desenvolvedor Fullstack</option>
-                                <option value="desenvolvedor-mobile">Desenvolvedor Mobile</option>
-                                <option value="desenvolvedor-web">Desenvolvedor Web</option>
-                                <option value="engenheiro-de-automacao">Engenheiro de automação</option>
-                                <option value="engenheiro-de-dados">Engenheiro de dados</option>
-                                <option value="engenheiro-de-ia">Engenheiro de IA</option>
-                                <option value="engenheiro-de-redes">Engenheiro de redes</option>
-                                <option value="engenheiro-de-seguranca">Engenheiro de segurança</option>
-                                <option value="engenheiro-de-software">Engenheiro de software</option>
-                                <option value="engenheiro-de-suporte">Engenheiro de Suporte</option>
-                                <option value="especialista-em-cloud">Especialista em Cloud</option>
-                                <option value="especialista-em-ciberseguranca">Especialista em Cibersegurança</option>
-                                <option value="especialista-em-infraestrutura">Especialista em infraestrutura</option>
-                                <option value="especialista-em-redes">Especialista em redes</option>
-                                <option value="especialista-em-seguranca-da-informacao">Especialista em segurança da informação</option>
-                                <option value="programador-de-sistemas-embarcados">Programador de sistemas embarcados</option>
-                                <option value="scrum-master">Scrum Master</option>
-                                <option value="tech-lead">Tech Lead</option>
-                                <option value="ui-designer">UI Designer</option>
-                                <option value="ux-designer">UX Designer</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="tecnologias" class="form-label">Tecnologias que você domina:</label>
-                            <input type="text" id="tecnologias" name="tecnologias" class="form-control" placeholder="Ex: HTML5, CSS3, JavaScript, Bootstrap, Vue.js" required>
-                        </div>
-                    </form>
+                    
 
 <!--========================================================================================================================================================================-->
-                    <form class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
-                        <!------------------------------------------------------------------------------------------------------------------->
-                        <h5>Tem formação na área?</h2>
-                        <div class="">
-                            <input type="radio" id="com-formacao" name="formacao" value="com-formação" class="form-check-input">
-                            <label class="com-formacao form-check-label ms-2" for="com-formacao">Sim</label>
-                            <input type="radio" id="sem-formacao" name="formacao" value="sem-formação" class="form-check-input ms-3">
-                            <label class="sem-formacao form-check-label ms-2" for="sem-formacao">Não</label>
-                        </div>
-                        <!------------------------------------------------------------------------------------------------------------------->
+                        <div class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
+                            <!------------------------------------------------------------------------------------------------------------------->
+                            <h5>Tem formação na área?</h2>
+                            <div class="">
+                                <input type="radio" id="com-formacao" name="formacao" value="com-formação" class="form-check-input">
+                                <label class="com-formacao form-check-label ms-2" for="com-formacao">Sim</label>
+                                <input type="radio" id="sem-formacao" name="formacao" value="sem-formação" class="form-check-input ms-3">
+                                <label class="sem-formacao form-check-label ms-2" for="sem-formacao">Não</label>
+                            </div>
+                            <!------------------------------------------------------------------------------------------------------------------->
 
-                        <div class="d-flex flex-wrap mb-1 mt-2">
-                            <input type="checkbox" id="checkbox-tecnico" name="checkbox-tecnico" value="checkbox-tecnico" class="form-check-input">
-                            <label id="label-tecnico" class="form-check-label ms-2" for="checkbox-tecnico">Técnico</label>
-                        </div>
-                        <div class="d-flex flex-wrap mb-1">
-                            <input type="checkbox" id="checkbox-graduacao" name="checkbox-graduacao" value="checkbox-graduacao" class="form-check-input">
-                            <label id="label-graduacao" class="form-check-label ms-2" for="checkbox-graduacao">Graduação</label>
-                        </div>
-                        <div class="d-flex flex-wrap mb-1">
-                            <input type="checkbox" id="checkbox-mestrado" name="checkbox-mestrado" value="checkbox-mestrado" class="form-check-input">
-                            <label id="label-mestrado" class="form-check-label ms-2" for="checkbox-mestrado">Mestrado</label>
-                        </div>
-                        <div class="d-flex flex-wrap mb-3">
-                            <input type="checkbox" id="checkbox-doutorado" name="checkbox-doutorado" value="checkbox-doutorado" class="form-check-input">
-                            <label id="label-doutorado" class="form-check-label ms-2" for="checkbox-doutorado">Doutorado</label>
-                        </div>
+                            <div class="d-flex flex-wrap mb-1 mt-2">
+                                <input type="checkbox" id="checkbox-tecnico" name="checkbox-tecnico" value="checkbox-tecnico" class="form-check-input">
+                                <label id="label-tecnico" class="form-check-label ms-2" for="checkbox-tecnico">Técnico</label>
+                            </div>
+                            <div class="d-flex flex-wrap mb-1">
+                                <input type="checkbox" id="checkbox-graduacao" name="checkbox-graduacao" value="checkbox-graduacao" class="form-check-input">
+                                <label id="label-graduacao" class="form-check-label ms-2" for="checkbox-graduacao">Graduação</label>
+                            </div>
+                            <div class="d-flex flex-wrap mb-1">
+                                <input type="checkbox" id="checkbox-mestrado" name="checkbox-mestrado" value="checkbox-mestrado" class="form-check-input">
+                                <label id="label-mestrado" class="form-check-label ms-2" for="checkbox-mestrado">Mestrado</label>
+                            </div>
+                            <div class="d-flex flex-wrap mb-3">
+                                <input type="checkbox" id="checkbox-doutorado" name="checkbox-doutorado" value="checkbox-doutorado" class="form-check-input">
+                                <label id="label-doutorado" class="form-check-label ms-2" for="checkbox-doutorado">Doutorado</label>
+                            </div>
 
-                        <!------------------------------------------------------------------------------------------------------------------->
-        
-                        <div id="input-tecnico" class="mb-2">
-                            <label for="curso" class="form-label">Insira o curso técnico:</label>
-                            <input type="text" id="curso" name="curso" class="form-control" placeholder="Ex: Análise e Desenvolvimento de Sistemas" required>
+                            <!------------------------------------------------------------------------------------------------------------------->
+            
+                            <div id="input-tecnico" class="mb-2">
+                                <label for="curso" class="form-label">Insira o curso técnico:</label>
+                                <input type="text" id="curso" name="curso" class="form-control" placeholder="Ex: Análise e Desenvolvimento de Sistemas">
+                            </div>
+                            <div id="input-graduacao" class="mb-2">
+                                <label for="graduacao" class="form-label">Insira o curso de graduação:</label>
+                                <input type="text" id="graduacao" name="graduacao" class="form-control" placeholder="Ex: Ciências da Computação">
+                            </div>
+                            <div id="input-mestrado" class="mb-2">
+                                <label for="mestrado" class="form-label">Insira o curso de mestrado:</label>
+                                <input type="text" id="mestrado" name="mestrado" class="form-control" placeholder="Ex: Engenharia de Software">
+                            </div>
+                            <div id="input-doutorado" class="mb-2">
+                                <label for="doutorado" class="form-label">Insira o curso de doutorado:</label>
+                                <input type="text" id="doutorado" name="doutorado" class="form-control" placeholder="Ex: Ciência de dados">
+                            </div>
                         </div>
-                        <div id="input-graduacao" class="mb-2">
-                            <label for="graduacao" class="form-label">Insira o curso de graduação:</label>
-                            <input type="text" id="graduacao" name="graduacao" class="form-control" placeholder="Ex: Ciências da Computação" required>
-                        </div>
-                        <div id="input-mestrado" class="mb-2">
-                            <label for="mestrado" class="form-label">Insira o curso de mestrado:</label>
-                            <input type="text" id="mestrado" name="mestrado" class="form-control" placeholder="Ex: Engenharia de Software" required>
-                        </div>
-                        <div id="input-doutorado" class="mb-2">
-                            <label for="doutorado" class="form-label">Insira o curso de doutorado:</label>
-                            <input type="text" id="doutorado" name="doutorado" class="form-control" placeholder="Ex: Ciência de dados" required>
-                        </div>
-                    </form>
 <!--========================================================================================================================================================================-->
-                    <form class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
-                        <h5 class="mb-4">Experiências profissionais</h5>
+                        <div class="cor-de-fundo-roxo p-4 mt-3 rounded border-top">
+                            <h5 class="mb-4">Experiências profissionais</h5>
 
-                        <div id="experiencias-container" class="mb-3"></div>
+                            <div id="experiencias-container" class="mb-3"></div>
 
-                        <button type="button" id="adicionar-experiencia" class="btn btn-primary w-100">
-                            <i class="fa-solid fa-plus"></i> Adicionar experiência
-                        </button>
+                            <button type="button" id="adicionar-experiencia" class="btn btn-primary w-100">
+                                <i class="fa-solid fa-plus"></i> Adicionar experiência
+                            </button>
+                        </div>
+
+
+                        <div class="cor-de-fundo-roxo d-grid d-flex flex-wrap gap-2 mt-3 p-3 justify-content-center">
+                            <button type="submit" class="btn btn-primary col-5">Gerar Bio</button>
+                            <button type="reset" class="btn btn-danger col-5">Limpar</button>
+                        </div>
                     </form>
-
-
-                    <div class="cor-de-fundo-roxo d-grid d-flex flex-wrap gap-2 mt-3 p-3 justify-content-center">
-                        <button type="submit" class="btn btn-primary col-5">Gerar Bio</button>
-                        <button type="reset" class="btn btn-danger col-5">Limpar</button>
-                    </div>
                 </div>
             </div>
 
