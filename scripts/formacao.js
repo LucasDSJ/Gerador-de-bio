@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkboxMestrado = document.getElementById("checkbox-mestrado");
     const checkboxDoutorado = document.getElementById("checkbox-doutorado");
 
-    // ✅ Mudança principal: usar "click" em vez de "change" — funciona mesmo se for um único radio
+    // Mudança principal: usar "click" em vez de "change" — funciona mesmo se for um único radio
     radioFormacao.addEventListener("click", () => {
         if (radioFormacao.checked) {
             document.getElementById("label-tecnico").style.display = "block";
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } 
     });
 
-    // ✅ Mudança: eventos dos checkboxes foram movidos para fora do listener do radio
+    // Mudança: eventos dos checkboxes foram movidos para fora do listener do radio
     checkboxTecnico.addEventListener("change", () => {
         if (checkboxTecnico.checked) {
             document.getElementById("input-tecnico").style.display = "block";
