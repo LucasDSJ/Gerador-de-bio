@@ -1,0 +1,10 @@
+.botao-branco {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-branco:hover {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
