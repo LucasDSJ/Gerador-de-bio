@@ -181,6 +181,11 @@ const modelosExperiencias = [
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("formulario-dev")
 
+    let bioDiv = document.getElementById("bioGerada");
+    const novaVersaoBtn = document.getElementById("novaVersaoBtn");
+    const copiarBtn = document.getElementById("copiarBtn");
+    const copiadoMsg = document.getElementById("copiadoMsg");
+
     function gerarBioDev() {
         
         const nome = document.getElementById("nome").value.trim();
@@ -390,7 +395,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        const bioDiv = document.getElementById("bioGerada");
         bioDiv.textContent = frase;
         bioDiv.classList.remove("opacity-0")
 
@@ -399,6 +403,27 @@ document.addEventListener("DOMContentLoaded", () => {
         //console.log("IDS USADOS: " + usados)
         console.log("QUANTIDADE: " + quantidadeDeCursos)
     }
+
+    novaVersaoBtn.addEventListener("click", function() {
+        gerarBioDev();
+    });
+    
+    copiarBtn.addEventListener("click", function() {
+        const text = bioDiv.textContent;
+        if (!text) return;
+        navigator.clipboard.writeText(text).then(() => {
+            mostrarNotificacao("Bio copiada para a área de transferência!", "#2bd653");
+        });
+    });
+
+    form.addEventListener("reset", () => {
+        if(bioDiv.textContent != ""){
+            mostrarNotificacao("Campos limpos com sucesso!", "#d62b47")
+        }
+        bioDiv.textContent = "";
+        copiadoMsg.style.display = "none";
+    })
+    
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
