@@ -3,8 +3,26 @@
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.botao-verde {
+    background-color: rgb(43, 214, 83);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.botao-vermelho {
+    background-color: rgb(214, 43, 71);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 .botao-branco:hover {
     background-color: rgb(200, 200, 200);
     color: black;
+}
+.botao-verde:hover {
+    background-color: rgb(33, 170, 65);
+    color: white
+}
+.botao-vermelho:hover {
+    background-color: rgb(181, 37, 61);
+    color: white;
 }
