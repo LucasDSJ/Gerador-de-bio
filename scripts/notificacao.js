@@ -5,9 +5,11 @@ function mostrarNotificacao(mensagem, cor) {
         gravity: "top",
         position: "right",
         backgroundColor: cor,
+        
         stopOnFocus: true,
         style: {
-            borderRadius: "15px"
+            borderRadius: "15px",
+            boxShadow: `0 2px 10px ${cor}`
         }
     }).showToast();
 }
