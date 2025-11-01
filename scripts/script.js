@@ -151,7 +151,7 @@ const modelos = [
 
 
         // Captura elementos
-const form = document.querySelector("form");
+const form = document.getElementById("formulario-padrao");
 const bioDiv = document.getElementById("bioGerada");
 const novaVersaoBtn = document.getElementById("novaVersaoBtn");
 const copiarBtn = document.getElementById("copiarBtn");
