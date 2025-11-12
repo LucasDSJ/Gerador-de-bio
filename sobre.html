@@ -18,8 +18,8 @@
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
     
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/listaExemplos.css">
 </head>
 
 
@@ -33,52 +33,61 @@
             <div class="row justify-content-center">
                 <div class="col-md-9 col-lg-7">
                     <div class="cor-de-fundo-roxo p-4 rounded">
-                        <h1 class="text-center">Sobre mim</h2>
-                        <div class="d-flex align-items-center mt-4 flex-md-row flex-column text-md-start text-center border-bottom">
-                            <!-- Imagem à esquerda -->
-                            <img src="img/perfil-github.jfif"
-                                alt="Foto de perfil"
-                                class="img-fluid rounded-circle imagem-perfil me-md-4 mb-3 mb-md-0">
+                        <h1 class="text-center">O que é o Gerador de Bio?</h2>
+                            <div class="d-flex align-items-center mt-4 flex-md-row flex-column text-md-start text-center">
+                                <img src="img/logo.png" alt="Foto de perfil" class="img-fluid rounded-circle imagem-logo me-md-4 mb-3 mb-md-0">
+                                <p class="fs-5 mb-3">
+                                    Este projeto tem como objetivo simplificar a criação de bios para redes sociais, portfólios e perfis profissionais.
+                                    Através de uma interface intuitiva e moderna, o usuário pode gerar descrições automáticas com base em diferentes estilos e temas.
+                                </p>
+                            </div>
+                            <div class="border mt-3"></div>
+                            <h2 class="text-center mt-4">Alguns exemplos:</h2>
+                            <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                                <div class="row">
+                                    <div class="list-group list-group-horizontal" id="myList" role="tablist">
+                                        <a class="list-group-item list-group-item-action active custom-tab" data-bs-toggle="list" href="#gerador-dev" role="tab">Gerador Dev</a>
+                                        <a class="list-group-item list-group-item-action custom-tab" data-bs-toggle="list" href="#gerador-padrao" role="tab">Gerador padrão</a>
+                                    </div>
 
-                            <!-- Texto à direita -->
-                            <p class="fs-5 mb-3">
-                                Olá! Sou Lucas, desenvolvedor full stack apaixonado por criar aplicações completas e eficientes.
-                                Transformo ideias em soluções digitais que unem design, performance e funcionalidade, sempre buscando evoluir com novas tecnologias e boas práticas de desenvolvimento.
-                            </p>
-                        </div>
-                        <h2 class="text-center mt-4">Tecnologias que utilizo:</h2>
-                        <div class="d-flex flex-wrap justify-content-center gap-4 mt-4 mb-2">
-                            <i class="icones fa-brands fa-html5 fa-3x border rounded-3 p-2" title="HTML5"></i>
-                            <i class="icones fa-brands fa-css3-alt fa-3x border rounded-3 p-2" title="CSS3"></i>
-                            <i class="icones fa-brands fa-js fa-3x border rounded-3 p-2" title="JavaScript"></i>
-                            <i class="icones fa-brands fa-bootstrap fa-3x border rounded-3 p-2" title="Bootstrap"></i>
-                            <i class="icones devicon-tailwindcss-original fa-3x border rounded-3 p-2" title="Tailwind"></i>
-                            <i class="icones devicon-materializecss-plain fa-3x border rounded-3 p-2" title="Materialize"></i>
-                            <i class="icones fa-brands fa-vuejs fa-3x border rounded-3 p-2" title="Vue.js"></i>
-                            <i class="icones fa-brands fa-php fa-3x border rounded-3 p-2" title="PHP"></i>
-                            <i class="icones fa-brands fa-react fa-3x border rounded-3 p-2" title="React"></i>
-                            <i class="icones fa-brands fa-java fa-3x border rounded-3 p-2" title="Java"></i>
-                            <i class="icones fa-brands fa-python fa-3x border rounded-3 p-2" title="Python"></i>
-                            <i class="icones fa-brands fa-git-alt fa-3x border rounded-3 p-2" title="Git"></i>
-                            <i class="icones fa-brands fa-github fa-3x border rounded-3 p-2" title="GitHub"></i>
-                            <i class="icones devicon-kotlin-plain fa-3x border rounded-3 p-2" title="Kotlin"></i>
-                            <i class="icones devicon-mongodb-plain fa-3x border rounded-3 p-2" title="MongoDB"></i>
-                            <i class="icones devicon-mysql-original fa-3x border rounded-3 p-2" title="MySQL"></i>
-                            <i class="icones devicon-nodejs-plain-wordmark fa-3x border rounded-3 p-2" title="Node.js"></i>
-                            <i class="icones devicon-expo-original-wordmark fa-3x border rounded-3 p-2" title="Expo"></i>
-                            <i class="icones devicon-canva-original fa-3x border rounded-3 p-2" title="Canva"></i>
-                            <i class="icones devicon-figma-plain fa-3x border rounded-3 p-2" title="Figma"></i>
-                        </div>
+                                    <div class="tab-content mt-3">
+                                        <div class="tab-pane fade show active" id="gerador-dev" role="tabpanel">
+                                            <p>
+                                            Olá! Eu sou <strong>Lucas</strong>. Sou desenvolvedor fullstack e tenho
+                                            conhecimento em <strong>HTML5, CSS3, JavaScript, Java</strong> e
+                                            <strong>Python</strong>. Sou formado no curso técnico de Desenvolvimento
+                                            de Sistemas e atualmente atuo como <em>Desenvolvedor Backend</em> na
+                                            Empresa de Tecnologia LTDA desde <strong>01/10/2025</strong>.
+                                            </p>
+                                        </div>
 
-                        <h2 class="mt-4 pt-3 border-top">Contato:</h2>
-                        <div class="d-flex flex-wrap justify-content-start gap-4 mt-2">
-                            <i class="fa-solid fa-phone fa-2x border rounded-circle p-2 mt-3 ms-3"></i><p class="mt-4 fonte-contato fw-bold">(11) 98591-3186</p>
-                        </div>
-                        <div class="d-flex justify-content-start gap-4 mt-2">
-                            <i class="fa-solid fa-envelope fa-2x border rounded-circle p-2 mt-3 ms-3"></i><p class="mt-4 fonte-contato fw-bold">lucasdsjr2005@gmail.com</p>
-                        </div>
-                        <div class="d-flex flex-wrap justify-content-start gap-4 mt-2">
-                            <i class="devicon-linkedin-plain fa-2x border rounded-circle p-2 mt-3 ms-3"></i><a class="link link-light link-underline link-underline-opacity-0 mt-4 fonte-contato fw-bold" href="https://www.linkedin.com/in/lucas-da-silva-junior-58b6a728b/" target="_blank">Lucas da Silva Junior</a>
+                                        <div class="tab-pane fade" id="gerador-padrao" role="tabpanel">
+                                            <p>
+                                            Sou <strong>Emílio Silva</strong>. Atualmente sou médico e tenho o
+                                            objetivo de migrar de área de atuação. Tenho conhecimento em
+                                            <strong>Java, HTML5</strong> e <strong>CSS3</strong>. Nas horas vagas,
+                                            gosto de carros, futebol e aprender idiomas. Agradeço por ter lido até aqui! <strong>Contato:</strong> seuemail@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="border mt-3"></div>
+                        <h2 class="pt-3 text-center">Teste já!</h2>
+                        <div class="container mb-4 p-3 d-flex flex-wrap gap-3 justify-content-center col-12 col-sm-12 col-md-12 col-lg-12">
+                            <a href="index.html" class="text-decoration-none text-white flex-fill">
+                                <div class="border rounded p-3 d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-user-pen fa-lg border rounded-3 p-3"></i>
+                                    <p class="mb-0 fw-semibold"  style="font-size: 14px;">Gerador padrão</p>
+                                </div>
+                            </a>
+                            <a href="gerador-de-bio-programador.html" class="text-decoration-none text-white flex-fill">
+                                <div class="border rounded p-3 d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-user-gear fa-lg border rounded-3 p-3"></i>
+                                    <p class="mb-0 fw-semibold" style="font-size: 14px;">Gerador Dev</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +96,7 @@
         
     <footer-component></footer-component>
     
-    </div><!-- div app -->
+    </div>
 
     <!-- Componentes -->
     <script src="components/navbar.js"></script>
@@ -95,8 +104,6 @@
     <script src="components/app.js"></script>
     
     <!-- Scripts -->
-    <script src="script.js"></script>
-    <script src="notificacao.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Toastify JS - apontando para o arquivo minificado -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
