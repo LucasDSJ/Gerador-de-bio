@@ -9,7 +9,7 @@ const FooterComponent = {
                     <i class="fab fa-github fa-2x pt-1"></i>
                 </a>
             </div>
-            <p class="text-center text-white m-3">© 2025 Company, Inc</p>
+            <p class="text-center text-white m-3">© 2025 Gerador de Bio</p>
         </footer>
     `
 }
