@@ -9,10 +9,10 @@ const NavbarComponent = {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
                     <li class="nav-item" style="font-size: 15pt">
-                        <a class="nav-link active me-3" aria-current="page" href="sobre.html">Sobre o projeto</a>
+                        <a class="nav-link active me-3" aria-current="page" href="./sobre.html">Sobre o projeto</a>
                     </li>
                     <li class="nav-item" style="font-size: 15pt">
-                        <a class="nav-link active" href="contato.html">Contato</a>
+                        <a class="nav-link active" href="./contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
